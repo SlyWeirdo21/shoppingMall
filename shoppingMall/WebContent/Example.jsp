@@ -29,7 +29,7 @@ try
     	int COL4 = rs.getInt("COL4");
     	int ID = rs.getInt("ID");
     	
-    	/* String query = "INSERT INTO MORUGATSUYO(id, COL1, COL2, COL3, COL4) VALUES(" + i + (int)(Math.random() * 100) + "," + (int)(Math.random() * 100) + "," +(int)(Math.random() * 100) + "," + (int)(Math.random() * 100) + ")"; */
+    	/* String query = "INSERT INTO MORUGATSUYO(ID, COL1, COL2, COL3, COL4) VALUES(" + i + (int)(Math.random() * 100) + "," + (int)(Math.random() * 100) + "," +(int)(Math.random() * 100) + "," + (int)(Math.random() * 100) + ")"; */
     	String update_query = "UPDATE MORUGATSUYO SET AVG_COL = %d WHERE ID = %d";
 		System.out.println(String.format(update_query, (COL1 + COL2 + COL3 + COL4) / 4, ID));
 		
