@@ -21,7 +21,7 @@
 
 	    //step3 create the statement object
     	Statement stmt=con.createStatement();
-    	Statement stmt2=con.createStatement();
+    	/* Statement stmt2=con.createStatement(); */
 
     	//step4 execute query
     	String query = "SELECT " +
@@ -38,7 +38,7 @@
  				   " SET order_price = " + (rs.getInt(2) * rs.getInt(3)) +
  				   " WHERE payment_history.product_id =  " + rs.getInt(1);
     	    System.out.println(query2);
-    	    stmt2.executeQuery(query2);
+			/* stmt2.executeQuery(query2); */
  
     	
     	}             
