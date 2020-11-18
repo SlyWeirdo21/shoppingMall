@@ -1,0 +1,5 @@
+CREATE TABLE EXAMPLE(
+    A NUMBER(10),
+    B NUMBER(10),
+    C NUMBER(10)
+)
