@@ -31,21 +31,23 @@ try
     String query = " SELECT " +
     	    	   " product.name AS name, product.price AS price, product.stock AS stock, product.description AS description, product.origin AS origin " +
     			   " FROM " +
-    	    	   " product ";
+    	    	   " product " +
+    			   " WHERE " +
+    	    	   " 1 = 1 ";
     
- 	if (product_price != null) {
-		query += " WHERE price >= " + product_price;
+ 	if (product_price != null && product_price.length() != 0) {
+		query += " AND price >= " + product_price;
 	}
 	
-	if (product_price2 != null) {
+	if (product_price2 != null && product_price2.length() != 0) {
 		query += " AND price <= " + product_price2;
 	}
 	
-	if (product_stock != null) {
-		query += " OR stock >= " + product_stock;
+	if (product_stock != null && product_stock.length() != 0) {
+		query += " AND stock >= " + product_stock;
 	}
 	
-	if (product_stock2 != null) {
+	if (product_stock2 != null && product_stock2.length() != 0) {
 		query += " AND stock <= " + product_stock2;
 	}
 	
@@ -94,7 +96,10 @@ catch(Exception e)
     }
 
     function redirect_with_get_params(product_price, product_price2, product_stock, product_stock2) {
-        window.location.href = 'parameter_query_example02.jsp?product_price=' + product_price + '&product_price2=' + product_price2 + '&product_stock=' + product_stock + '&product_stock2=' + product_stock2;
+		const query_parameter = "parameter_query_example02.jsp?product_price=" + product_price + 
+		"&product_price2=" + product_price2 + "&product_stock=" + product_stock + 
+		"&product_stock2=" + product_stock2;
+		window.location.href = query_parameter;
     }
 </script>
 </body>
