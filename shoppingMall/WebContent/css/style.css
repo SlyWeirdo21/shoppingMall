@@ -3,6 +3,15 @@
 body {
 	margin: 0 auto;
 }
+
+h3 {
+	text-align: center;
+}
+
+form {
+	margin: 0 0 20px 0;
+}
+
 header {
 	text-align: center;
 	background: #00ffff;
