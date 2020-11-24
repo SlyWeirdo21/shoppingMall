@@ -3,6 +3,7 @@
 
 <nav>
 <ul>
+	<li><a href="index.jsp?section=category_create">카테고리 등록</a></li>
 	<li><a href="index.jsp?section=product_create">상품 등록</a></li>
 	<li><a href="index.jsp?section=product_list">상품 목록</a></li>
 	<li><a href="index.jsp?section=payment_create">판매 등록</a></li>

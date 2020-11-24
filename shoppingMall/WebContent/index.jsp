@@ -22,6 +22,7 @@
 	case "payment_list_by_category": %> <%@ include file="section/payment_list_by_category.jsp" %> <% break;
 	case "payment_create": %> <%@ include file="section/payment_create.jsp" %> <% break;
 	case "product_create": %> <%@ include file="section/product_create.jsp" %> <% break;
+	case "category_create": %> <%@ include file="section/category_create.jsp" %> <% break;
 	default: %><pre>이 프로그램은 쇼핑몰 관리해주는 프로그램입니다</pre><% break;
 	}
 	%>
